@@ -36,7 +36,7 @@ int main() {
 
     // Input Arrival Times
     for (int i = 0; i < n; i++) {
-        printf("\nEnter Process %d Arrival Time: ", i);
+        printf("Enter Process %d Arrival Time: ", i);
         scanf("%d", &ps[i].at);
         ps[i].pid = i;
     }

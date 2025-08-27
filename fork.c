@@ -4,7 +4,15 @@
 
 int main(){
     int x=fork();
-    printf("%d\n",getpid());
-    printf("%d\n",getppid());
+    if(x==0) {
+        printf("child is created with id %d\n",getpid());
+    }
+    else if( x < 0) {
+        printf("child not created");
+    }
+    else {
+        printf("parent created with ID: %d\n",getppid());
+    }
+
     return 0;
 }
